@@ -33,6 +33,5 @@ This would display exactly one movie which is Toy Story and a trailer of it is p
 
 Requirements
 ------------
-
     - webbrowser module
     - fresh_tomatoes.py file from Udacity's course "Programming Foundation with Python"
