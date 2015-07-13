@@ -1,0 +1,38 @@
+Movie Trailer Website version 1.0 13/07/2015
+
+GENERAL USAGE NOTES
+-------------------
+
+Run Website
+-----------
+In order to run the website execute the following command:
+python main.py
+
+Then a file fresh_tomatoes.html is generated.
+
+
+Add Movies to Website
+---------------------
+The collections of movies that is going to be displayed on the website is passed to
+the function open_movies_page() of the file fresh_tomatoes.py as a list of movie classes.
+
+Each movie class requires a title, story line, poster image url and trailer url.
+
+For example:
+
+Movie class of Toy Story:
+toy_story = movie.Movie("Toy Story", "A story of a boy and his toys that come to life",
+                        "http://www.filmandtvnow.com/wp-content/uploads/2014/11/Toy-Story-Characters1.jpg",
+                        "https://www.youtube.com/watch?v=KYz2wyBy3kc")
+
+movies = [toy_story]
+fresh_tomatoes.open_movies_page(movies)
+
+This would display exactly one movie which is Toy Story and a trailer of it is played when it is clicked on.
+
+
+Requirements
+------------
+
+    - webbrowser module
+    - fresh_tomatoes.py file from Udacity's course "Programming Foundation with Python"
